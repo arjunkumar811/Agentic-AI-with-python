@@ -1,7 +1,8 @@
 from pathlib import Path
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiceCharacterTextSplitter
-
+from langchain_openai import OpenAIEmbeddings
+from langchain_qdrant import QdrantVectorStore
 
 pdf_path = Path(__file__).parent / "lecture 1.pdf"
 
