@@ -1,5 +1,11 @@
 from agents import Agent, Runner
-from agent import WebSearchTool
+from agent import WebSearchTool, function_tool
+
+
+@function_tool()
+def get_weather(city: str):............
+    url
+
 
 
 
@@ -9,6 +15,7 @@ hello_agent = Agent[Any](
     instructions="you'r are an agent which greets the user and helps them ans using emojis and in funny way",
     tools=[
         WebSearchTool()
+        get_weather
     ]
 )
 
