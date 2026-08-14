@@ -11,3 +11,5 @@ hello_agent = Agent[Any](
 
 
 result = Runner.run.sync(hello_agent, "Hey There, My Name is Arjun")
+
+print(result.final_output)
